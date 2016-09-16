@@ -1,0 +1,175 @@
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uwyo.toddt.tipcalc.TipCalcActivity"
+    android:id="@+id/tipSwitcher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="25dp"
+            android:paddingLeft="10dp"
+            android:text="@string/introduction"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:textSize="10pt"
+                android:text="$"
+                android:layout_weight="0.38"
+                android:layout_gravity="left" />
+
+            <EditText
+                android:id="@+id/bill_amount"
+                android:layout_width="329dp"
+                android:layout_height="64dp"
+                android:hint="@string/bill_total"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tip_percent"
+            android:layout_width="329dp"
+            android:layout_height="62dp"
+            android:hint="@string/tip_field"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/split_msg"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:paddingTop="25dp"/>
+
+        <EditText
+            android:id="@+id/split_num"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:hint="Number of people"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_weight="0.12"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:id="@+id/tip_spinner"
+            android:layout_width="284dp"
+            android:layout_height="54dp"
+            android:background="#7FFFD4"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:layout_marginTop="20dp"
+            android:text="@string/calculate"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_title"
+            android:textColor="#000000"
+            android:textSize="10pt"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="10pt"
+            android:text="temp"
+            android:textAlignment="center"
+            android:id="@+id/tip"
+            android:layout_weight="0.08"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/total_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="10pt"
+            android:text="temp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.09" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/split_title"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:paddingTop="40dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/textView2"
+            android:layout_weight="0.08" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:id="@+id/splitTip_text"
+            android:layout_weight="0.16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:id="@+id/splitTotal_text"
+            android:layout_weight="0.18" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/back_text"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.08" />
+
+    </LinearLayout>
+
+</ViewSwitcher>

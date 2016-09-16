@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tip Calc</string>
+    <string name="introduction">Fill in the fields to
+        determine your bill total with tip.</string>
+    <string name="bill_total">Enter the bill total</string>
+    <string name="tip_field">Enter the desired tip percent</string>
+    <string name="calculate">Calculate</string>
+    <string name="back_text">Calculate again</string>
+    <string name="split_msg">If bill is to be split:</string>
+    <string name="total_result">Total: $</string>
+    <string name="tip_result">Tip: $</string>
+    <string name="total_title">Total amount:</string>
+    <string name="split_title">Split amounts:</string>
+
+    <string-array name="tip_choice_array">
+        <item>No rounding</item>
+        <item>Round total</item>
+        <item>Round tip</item>
+        <item>Split: No rounding</item>
+        <item>Split: Round total</item>
+        <item>Split: Round tip</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
