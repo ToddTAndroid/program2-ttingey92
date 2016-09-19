@@ -12,3 +12,8 @@ Description:  (how to run the program, phone/emulator screen size, android versi
 Anything that doesn't work:
 
 	If my tests were good enough, everything should be working. 
+
+
+Grade
+===
+*Everything works as expected:* 50/50
